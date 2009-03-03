@@ -332,7 +332,7 @@ function supportMultiTransitions(opts) {
 			var fx = opts.fxs[i];
 			var tx = txs[fx];
 			if (!tx || !txs.hasOwnProperty(fx) || !$.isFunction(tx)) {
-				log('discarding unknowtn transition: ',fx);
+				log('discarding unknown transition: ',fx);
 				opts.fxs.splice(i,1);
 				i--;
 			}
